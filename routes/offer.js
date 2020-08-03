@@ -92,7 +92,7 @@ router.get("/offer/with-count", async (req, res) => {
       object.title = new RegExp(req.query.title, "i");
     }
     let skip;
-    let limit = 2;
+    let limit = 8;
 
     if (!req.query.page || req.query.page === "0" || req.query.page === "1") {
       skip = 0;
